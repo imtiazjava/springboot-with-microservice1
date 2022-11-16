@@ -1,0 +1,5 @@
+package com.cgi.departmentservice.service;
+
+public class DepartmentService {
+
+}

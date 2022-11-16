@@ -1,0 +1,5 @@
+package com.cgi.employeeservice.vo;
+
+public class ResponseTemplateDA {
+
+}

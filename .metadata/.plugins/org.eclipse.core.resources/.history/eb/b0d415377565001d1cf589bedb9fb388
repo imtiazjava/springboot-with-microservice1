@@ -1,0 +1,5 @@
+package com.cgi.employeeservice.controller;
+
+public class EmployeeController {
+
+}

@@ -1,0 +1,12 @@
+package com.cgi.employeeservice.entity;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Employee {
+
+	private Long employeeId;
+	private String employeeName;
+	private String employeeEmail;
+	private Long departmentId;
+}

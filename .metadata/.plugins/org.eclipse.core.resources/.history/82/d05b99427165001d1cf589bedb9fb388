@@ -1,0 +1,5 @@
+package com.cgi.departmentservice.repository;
+
+public interface DepartmentRepository {
+
+}

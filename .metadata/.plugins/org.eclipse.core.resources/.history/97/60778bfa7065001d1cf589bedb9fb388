@@ -1,0 +1,5 @@
+package com.cgi.departmentservice.entity;
+
+public class Department {
+
+}
