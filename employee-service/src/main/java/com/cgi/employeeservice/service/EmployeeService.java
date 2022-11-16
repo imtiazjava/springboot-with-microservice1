@@ -1,5 +1,7 @@
 package com.cgi.employeeservice.service;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +20,11 @@ public class EmployeeService {
 	}
 
 	public Employee getEmployeeById(Long id) {
-		 return this.employeeRepository.findById(id).get();
+		Optional<Employee> op=this.employeeRepository.findById(id);
+		if(op.isPresent()) {
+			return op.get();
+		}else {
+			return null;
+		}
 	}
 }

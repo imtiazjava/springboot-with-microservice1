@@ -1,0 +1,24 @@
+THEY ARE FOLLOWING ENDS POINT OF DEPARTMENT
+
+1.
+
+METHOD NAME: POST
+
+URL        : http://localhost:6002/department/save
+
+PURPOSE    : To store the department details
+
+BODY      :
+
+{
+"departmentId":1,
+"departmentName":"HR",
+"departmentLocation":"HYD"
+}
+----------------------------------------------------------
+2.
+METHOD NAME: GET
+
+URL        : http://localhost:6002/department/1
+
+PURPOSE    : To fetch the departmenet details based on department id
