@@ -1,9 +1,8 @@
 package com.cgi.departmentservice.controller;
 
- 
-import java.util.logging.LogManager;
-
-import org.apache.logging.log4j.Logger;
+  
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,11 +19,12 @@ import com.cgi.departmentservice.service.DepartmentService;
 public class DepartmentController {
 	@Autowired
 	private DepartmentService departmentService;
-		
+	private  Logger log= LoggerFactory.getLogger(DepartmentController.class);
 	@PostMapping("/save")
 	public Department saveDepartment(@RequestBody Department department)
 	{
 		  System.out.println("inside the save department method");
+		  log.info("inside the save department method");
 		 return this.departmentService.saveDepartment(department);
 		
 	}
