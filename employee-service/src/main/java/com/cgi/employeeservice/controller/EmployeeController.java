@@ -37,7 +37,7 @@ public class EmployeeController {
 		if (employee != null) {
 			// Get the department details from the DEPARTMENT-SERVICE by using RestTemplate
 			Department department = this.restTemplate
-					.getForObject("http://localhost:6002/department/" + employee.getDepartmentId(), Department.class);
+					.getForObject("http://DEPARTMENT-SERVICE/department/" + employee.getDepartmentId(), Department.class);
 			ResponseTemplateVO rt = new ResponseTemplateVO();
 			if (employee != null && department != null) {
 				rt.setEmployee(employee);
