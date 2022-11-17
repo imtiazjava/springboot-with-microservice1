@@ -1,0 +1,12 @@
+
+#SERVICE-NAME
+
+spring:
+  application:
+    name: SPRING-CLOUD-CONFIG
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/imtiazjava/global-config
+          clone-on-start: true
